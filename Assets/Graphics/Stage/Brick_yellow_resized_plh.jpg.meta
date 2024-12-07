@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: f294eb4b1d515ad498913c0c52133391
+guid: 70800bf109338c34aa48c8eb8cb58ac0
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5539185162743671618
-    second: Brick_resized_plh_0
+      213: -2789179573621989986
+    second: Brick_yellow_resized_plh_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,7 +113,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Brick_resized_plh_0
+      name: Brick_yellow_resized_plh_0
       rect:
         serializedVersion: 2
         x: 0
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: eb49c8d317cd023b0800000000000000
-      internalID: -5539185162743671618
+      spriteID: e9d5c7b94f7da49d0800000000000000
+      internalID: -2789179573621989986
       vertices: []
       indices: 
       edges: []
@@ -147,8 +147,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Brick_resized_plh_0: -5539185162743671618
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
