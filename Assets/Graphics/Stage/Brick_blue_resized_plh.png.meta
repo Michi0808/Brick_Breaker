@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Brick_blue_resized_plh_0: -2291559030083086238
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

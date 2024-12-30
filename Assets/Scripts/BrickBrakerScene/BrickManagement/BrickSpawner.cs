@@ -10,7 +10,7 @@ public class BrickSpawner : MonoBehaviour
     /// <summary>
     /// The brick-prefab
     /// </summary>
-    [SerializeField] private GameObject pfbBrick;
+    [SerializeField] private GameObject[] brickPrefabs;
 
     /// <summary>
     /// The amount of bricks to be spawned along x- and y-axis
@@ -34,25 +34,30 @@ public class BrickSpawner : MonoBehaviour
 
 
     /// <summary>
-    /// Spawns bricks using the pfbBrick
+    /// Spawns bricks using the brickPrefabs array
     /// </summary>
     /// <param name="startPos">The top-left starting position</param>
     private void SpawnBricks(Vector2 startPos)
     {
-        SpriteRenderer r = pfbBrick.GetComponentInChildren<SpriteRenderer>();
+        SpriteRenderer r = brickPrefabs[0].GetComponentInChildren<SpriteRenderer>();
         float xSize = r.bounds.size.x;
         float ySize = r.bounds.size.y;
 
-        for (int i = 1; i <= brickCountX; i++) 
+        for (int i = 1; i <= brickCountX; i++)
         {
-            for(int j = 1; j <= brickCountY; j++)
+            for (int j = 1; j <= brickCountY; j++)
             {
-                GameObject newBrick = Instantiate(pfbBrick, transform);
+                GameObject newBrick = Instantiate(
+                    brickPrefabs[Random.Range(0, brickPrefabs.Length)],
+                    transform
+                );
+
                 Vector2 adjustement = new Vector2(xSize * i, ySize * j * -1);
                 newBrick.transform.position = startPos + adjustement;
             }
         }
     }
+
 
 
     /// <summary>
